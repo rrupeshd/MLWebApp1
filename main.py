@@ -72,7 +72,7 @@ if (menuselected == "About Me"):
     lottie_hello = load_lottieurl("https://assets9.lottiefiles.com/packages/lf20_M9p23l.json")
     col11, col12 = st.columns(2)
     with col11:
-        pic="https://media-exp1.licdn.com/dms/image/C4D03AQGcObyFZvfRtQ/profile-displayphoto-shrink_400_400/0/1645786089098?e=1654732800&v=beta&t=Xg4P7ieCVtwf5f_H0vIie8TRdVbR2eMdJbqi2bfWOZQ"
+        pic="https://scontent-bom1-2.xx.fbcdn.net/v/t1.6435-9/59386096_2260099934046126_3002959138142552064_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=sbBjovrI6tcAX_-ZxL5&_nc_ht=scontent-bom1-2.xx&oh=00_AT9FOOsjnZifoVrc0W5RU4fgmNgrqyni9abEsulni7_6AQ&oe=62D28171"
         st.image(pic, caption="Me", output_format="auto")
     with col12:
         with st.container():
