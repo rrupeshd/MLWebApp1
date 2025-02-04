@@ -8,7 +8,7 @@ from streamlit_lottie import st_lottie
 st.set_page_config(page_title="Rupesh Dubey", page_icon=":bar_chart:", layout="wide")
 
 menuselected = option_menu(None, ["Home", "Projects","Income Tax Calculator" ,'About Me'],
-    icons= ['house', "list-task", 'bi-person-lines-fill'],
+    icons= ['house', "list-task", 'money','bi-person-lines-fill'],
     menu_icon="cast", default_index=0, orientation="horizontal")
 
 st.markdown("""---""")
@@ -20,8 +20,7 @@ def load_lottieurl(url):
     return r.json()
 
 if menuselected == "Income Tax Calculator":
-    st.title("Main Menu")
-
+    
     st.session_state["nav_to_second_app"] = False  # Default state
 
     if st.button("Go to Second App"):
