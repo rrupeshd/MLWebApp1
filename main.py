@@ -7,7 +7,7 @@ from streamlit_lottie import st_lottie
 
 st.set_page_config(page_title="Rupesh Dubey", page_icon=":bar_chart:", layout="wide")
 
-menuselected = option_menu(None, ["Home", "Projects", 'About Me'],
+menuselected = option_menu(None, ["Home", "Projects","Income Tax Calculator" ,'About Me'],
     icons= ['house', "list-task", 'bi-person-lines-fill'],
     menu_icon="cast", default_index=0, orientation="horizontal")
 
@@ -19,6 +19,17 @@ def load_lottieurl(url):
         return None
     return r.json()
 
+if menuselected == "Income Tax Calculator":
+    st.title("Main Menu")
+
+    st.session_state["nav_to_second_app"] = False  # Default state
+
+    if st.button("Go to Second App"):
+        st.session_state["nav_to_second_app"] = True
+    
+    if st.session_state["nav_to_second_app"]:
+        st.markdown("[Click here to open Second App](https://incometax.streamlit.app)")
+    
 if menuselected == "Home":
     lottie_coding = load_lottieurl("https://assets5.lottiefiles.com/packages/lf20_fcfjwiyb.json")
     # ---- WHAT I DO ----
