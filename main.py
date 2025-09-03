@@ -23,20 +23,24 @@ if menuselected == "My Other Web Apps":
     
     st.session_state["nav_to_second_app"] = False  # Default state
 
-    if st.button("Go to Income Tax Calculator App"):
+    if st.button("See other Streamlit Apps"):
         st.session_state["nav_to_second_app"] = True
     
     if st.session_state["nav_to_second_app"]:
-        st.markdown("[Click here to open the App](https://incometax.streamlit.app)")
-    
-    st.session_state["nav_to_third_app"] = False  # Default state
+        st.markdown("[Click here to open the Income Tax Calculator App](https://incometax.streamlit.app)")
+        st.markdown("[Click here to open the SQL Playground App](https://sqlpractice.streamlit.app/)")
+   
+    st.session_state["nav_to_nocode_app"] = False  # Default state
 
-    if st.button("Go to SQL Playground APP"):
-        st.session_state["nav_to_third_app"] = True
+    if st.button("See no-code APPs created from Lovable"):
+        st.session_state["nav_to_nocode_app"] = True
     
-    if st.session_state["nav_to_third_app"]:
-        st.markdown("[Click here to open the App](https://sqlpractice.streamlit.app/)")
-    
+    if st.session_state["nav_to_nocode_app"]:
+        st.markdown("[Click here to open the Rent receipt App](https://darkreceipt-genius.lovable.app/)")
+        st.markdown("[Click here to open the IQ test App](https://neural-spark-test.lovable.app/)")
+        st.markdown("[Click here to open the Excel File compare App](https://darkreceipt-genius.lovable.app/)")
+
+
 if menuselected == "Home":
     lottie_coding = load_lottieurl("https://assets5.lottiefiles.com/packages/lf20_fcfjwiyb.json")
     # ---- WHAT I DO ----
@@ -149,6 +153,7 @@ hide_st_style = """
             </style>
             """
 st.markdown(hide_st_style, unsafe_allow_html=True)
+
 
 
 
