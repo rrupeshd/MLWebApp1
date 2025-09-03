@@ -27,7 +27,7 @@ if menuselected == "My Other Web Apps":
         st.session_state["nav_to_second_app"] = True
     
     if st.session_state["nav_to_second_app"]:
-        st.markdown("[Click here to open Second App](https://incometax.streamlit.app)")
+        st.markdown("[Click here to open the App](https://incometax.streamlit.app)")
     
     st.session_state["nav_to_third_app"] = False  # Default state
 
@@ -35,7 +35,7 @@ if menuselected == "My Other Web Apps":
         st.session_state["nav_to_third_app"] = True
     
     if st.session_state["nav_to_third_app"]:
-        st.markdown("[Click here to open Second App](https://sqlpratice.streamlit.app)")
+        st.markdown("[Click here to open the App](https://sqlpractice.streamlit.app/)")
     
 if menuselected == "Home":
     lottie_coding = load_lottieurl("https://assets5.lottiefiles.com/packages/lf20_fcfjwiyb.json")
@@ -149,5 +149,6 @@ hide_st_style = """
             </style>
             """
 st.markdown(hide_st_style, unsafe_allow_html=True)
+
 
 
