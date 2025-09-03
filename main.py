@@ -7,7 +7,7 @@ from streamlit_lottie import st_lottie
 
 st.set_page_config(page_title="Rupesh Dubey", page_icon=":bar_chart:", layout="wide")
 
-menuselected = option_menu(None, ["Home", "Projects","Income Tax Calculator" ,'About Me'],
+menuselected = option_menu(None, ["Home", "Projects","My Other Web Apps" ,'About Me'],
     icons= ['house', "list-task", 'currency-dollar','bi-person-lines-fill'],
     menu_icon="cast", default_index=0, orientation="horizontal")
 
@@ -19,15 +19,23 @@ def load_lottieurl(url):
         return None
     return r.json()
 
-if menuselected == "Income Tax Calculator":
+if menuselected == "My Other Web Apps":
     
     st.session_state["nav_to_second_app"] = False  # Default state
 
-    if st.button("Go to Second App"):
+    if st.button("Go to Income Tax Calculator App"):
         st.session_state["nav_to_second_app"] = True
     
     if st.session_state["nav_to_second_app"]:
         st.markdown("[Click here to open Second App](https://incometax.streamlit.app)")
+    
+    st.session_state["nav_to_third_app"] = False  # Default state
+
+    if st.button("Go to SQL Playground APP"):
+        st.session_state["nav_to_third_app"] = True
+    
+    if st.session_state["nav_to_third_app"]:
+        st.markdown("[Click here to open Second App](https://sqlpratice.streamlit.app)")
     
 if menuselected == "Home":
     lottie_coding = load_lottieurl("https://assets5.lottiefiles.com/packages/lf20_fcfjwiyb.json")
@@ -141,4 +149,5 @@ hide_st_style = """
             </style>
             """
 st.markdown(hide_st_style, unsafe_allow_html=True)
+
 
