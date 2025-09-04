@@ -64,7 +64,7 @@ if menuselected == "Home":
 
 
 Projectlist = []
-
+Projectlist.append('Gen AI - ChatBot with some personality')
 Projectlist.append('Predication - Linear Regression')
 Projectlist.append('Predication - RandomForest Regression')
 Projectlist.append('Classification - Decision Tree')
@@ -75,6 +75,9 @@ if menuselected == "Projects":
         "Select the Project",
         (Projectlist))
 
+    if Project == 'Gen AI - ChatBot with some personality':
+        import Project5 as P5
+        P5.Pro5()
     if Project == 'Predication - Linear Regression':
         import Project1 as P1
         P1.Pro1()
@@ -153,6 +156,7 @@ hide_st_style = """
             </style>
             """
 st.markdown(hide_st_style, unsafe_allow_html=True)
+
 
 
 
