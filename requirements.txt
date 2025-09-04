@@ -14,3 +14,4 @@ streamlit
 streamlit-lottie
 streamlit-option-menu
 google.generativeai
+bs4
