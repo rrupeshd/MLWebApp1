@@ -124,11 +124,28 @@ You must strictly follow these rules in every message:
 
     st.markdown("""
     <style>
-      .chat-bubble {border-radius: 12px; padding: 10px 12px; margin: 8px 0; line-height: 1.45;}
-      .user-bubble {background: #1e88e5; color: white;}
-      .bot-bubble {background: #f1f3f4;}
-      .chat-icon {margin-right: 6px;}
-      .stChatInput {position: sticky; bottom: 0;}
+      .chat-bubble {
+        border-radius: 12px;
+        padding: 10px 12px;
+        margin: 8px 0;
+        line-height: 1.45;
+        font-size: 0.95rem;
+      }
+      .user-bubble {
+        background: #1e88e5;
+        color: white;              /* white text on blue */
+      }
+      .bot-bubble {
+        background: #f1f3f4;
+        color: #000000;            /* black text on light gray */
+      }
+      .chat-icon {
+        margin-right: 6px;
+      }
+      .stChatInput {
+        position: sticky;
+        bottom: 0;
+      }
     </style>
     """, unsafe_allow_html=True)
 
