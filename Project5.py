@@ -3,13 +3,6 @@ import google.generativeai as genai
 import os
 
 def Pro5():
-  # --- App Styling ---
-  st.markdown("""
-  <style>
-      /* General styles */
-      .stApp {
-          background-color: #f0f2f6;
-      }
       /* Chat bubbles */
       .chat-bubble {
           padding: 1rem;
