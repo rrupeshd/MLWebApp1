@@ -15,3 +15,6 @@ streamlit-lottie
 streamlit-option-menu
 google.generativeai
 bs4
+pypdf
+docx
+duckduckgo_search
