@@ -3,15 +3,6 @@ import google.generativeai as genai
 import os
 
 def Pro5():
-'''  
-  # --- Page Configuration ---
-  st.set_page_config(
-      page_title="AI Personality Chatbot",
-      page_icon="🤖",
-      layout="centered",
-      initial_sidebar_state="expanded",
-  )
-'''  
   # --- App Styling ---
   st.markdown("""
   <style>
