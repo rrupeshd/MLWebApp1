@@ -132,12 +132,18 @@ You must strictly follow these rules in every message:
         font-size: 0.95rem;
       }
       .user-bubble {
-        background: #1e88e5;
-        color: white;              /* white text on blue */
+      background: #1e88e5;
+      color: white;
+      padding: 10px;
+      border-radius: 10px;
+      margin: 5px 0;
       }
       .bot-bubble {
-        background: #f1f3f4;
-        color: #000000;            /* black text on light gray */
+      background: #2d2d2d;
+      color: #f5f5f5;
+      padding: 10px;
+      border-radius: 10px;
+      margin: 5px 0;
       }
       .chat-icon {
         margin-right: 6px;
