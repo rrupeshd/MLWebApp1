@@ -3,34 +3,6 @@ import google.generativeai as genai
 import os
 
 def Pro5():
-      /* Chat bubbles */
-      .chat-bubble {
-          padding: 1rem;
-          border-radius: 1rem;
-          margin-bottom: 1rem;
-          max-width: 80%;
-          display: flex;
-          align-items: flex-start;
-          gap: 0.75rem;
-      }
-      .user-bubble {
-          background-color: #dcf8c6;
-          align-self: flex-end;
-          margin-left: auto;
-      }
-      .bot-bubble {
-          background-color: #ffffff;
-          align-self: flex-start;
-      }
-      .chat-icon {
-          font-size: 1.5rem;
-      }
-      .stTextInput>div>div>input {
-          border-radius: 1rem;
-      }
-  </style>
-  """, unsafe_allow_html=True)
-  
   
   # --- Gemini API Configuration ---
   # Note: It's recommended to use st.secrets for API keys in deployed apps
