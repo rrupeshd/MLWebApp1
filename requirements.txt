@@ -16,5 +16,8 @@ streamlit-option-menu
 google.generativeai
 bs4
 pypdf
-docx
-duckduckgo_search
+python-docx
+duckduckgo-search
+beautifulsoup4
+requests
+
